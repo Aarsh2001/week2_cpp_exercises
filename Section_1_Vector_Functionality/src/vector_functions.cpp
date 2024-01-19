@@ -4,18 +4,10 @@
 using namespace std;
 
 // write your print vector function here
-
 int countMultiplesOfFive(vector<int> v)
 {
-    int c = 0;
-    for(auto it: v)
-    {
-        if (it%5==0)
-        {
-            c++;
-        }
-
-    }
+    
+    int c = count_if(v.begin(), v.end(), [](int y){return y%5==0;});
     return c;
 }
 

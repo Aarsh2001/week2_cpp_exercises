@@ -2,10 +2,11 @@
 #define VECTOR_FUNCTIONS_H
 
 #include <vector>
+using namespace std;
 
 //declare your print vector function here
 
-int countMultiplesOfFive(/*take a vector of ints here*/);
+int countMultiplesOfFive(vector<int> v);
 
 void addElements(std::vector<int>, int, int);
 

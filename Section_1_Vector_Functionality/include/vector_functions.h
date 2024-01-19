@@ -8,6 +8,6 @@ using namespace std;
 
 int countMultiplesOfFive(vector<int> v);
 
-void addElements(std::vector<int>, int, int);
+void addElements(std::vector<int>&, int, int);
 
 #endif

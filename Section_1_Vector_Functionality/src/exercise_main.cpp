@@ -1,6 +1,7 @@
 #include <iostream>
 #include "vector_functions.h"
 #include <string>
+using namespace std;
 
 bool check_add_elements()
 {
@@ -37,6 +38,9 @@ int main()
     std::vector<int> empty_vector;
     count = countMultiplesOfFive(empty_vector);
     std::cout << (count == 0 ? "Check 1 passed" : "Failed third check, should find 0 multiples and found " + std::to_string(count)) << std::endl;
+
+    addElements(some_multiples, 4, 5);
+    check_add_elements();
     
     return 0;
 }

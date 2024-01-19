@@ -12,7 +12,7 @@ int countMultiplesOfFive(vector<int> v)
 }
 
 
-void addElements(std::vector<int> v, int x, int n)
+void addElements(std::vector<int>&v, int x, int n)
 {
     for(int i = 0; i < n; i++)
     {

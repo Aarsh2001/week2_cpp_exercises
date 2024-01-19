@@ -27,7 +27,7 @@ bool checkStringConversion()
 
     okay &= Fraction(2, 3).toString() == "2/3";
 
-    okay &= Fraction(7, 9).toString() == "7/9";
+    okay &= Fraction(4, 8).toString() == "1/2";
 
     okay &= Fraction(0, 5).toString() == "0";
 

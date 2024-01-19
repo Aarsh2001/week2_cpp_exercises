@@ -2,8 +2,17 @@
 using namespace std;
 
 Fraction::Fraction(int a, int b){
-   num = a;
-   denom = b;
+   int divisor = __gcd(a, b);
+   if (divisor > 1)
+    {
+        num = a/divisor;
+        denom = b/divisor;
+    }
+    else
+    {
+        num = a;
+        denom = b;
+    }
 }
 Fraction Fraction::reciprocal(){
     return Fraction(denom, num);

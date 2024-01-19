@@ -1,6 +1,7 @@
 #include <memory>
 #include <iostream>
 #include <vector>
+using namespace std;
 
 /**
  * A simple class which just reports when it is created (constructor) and when it is destroyed (destructor).
@@ -22,9 +23,10 @@ class Reporter
     std::string ID;
 };
 
-
 int main()
 {
-    
+    Reporter* raw = new Reporter("raw pointer 2020");
+    unique_ptr<Reporter> unique = make_unique<Reporter>("unique pointer 2021");
+    delete raw;
     return 0;
 }
